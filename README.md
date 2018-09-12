@@ -10,7 +10,7 @@ Exercise 3.8 (pg 87) expands on the process chain of Program 3.1 in the book.
 
 This project contains the following files:
   - README
-  - project1.c : contains actual code for problems
+  - prog1.c : contains actual code for problems
   - Answers : contains any answers and/or observations for each problem of the exercise
   - Makefile
   
@@ -22,9 +22,9 @@ final problem of the exercise. However, the different results found throughout t
 
 Program Usage:
 In general, the project has three basic functions implemented at the command-line as follows:
-  1) ./project1 -h   : Display a help message to the user
-  2) ./project1 -n x : Runs the program with x being an additional command-line argument that specifies the number of processes
-  3) ./project1 -p   : Generates a test error message
+  1) ./prog1 -h   : Display a help message to the user
+  2) ./prog1 -n x : Runs the program with x being an additional command-line argument that specifies the number of processes
+  3) ./prog1 -p   : Generates a test error message
 The "-n" option will be used to perform each task of the exercise. 
 
 Personal thoughts on the project: 
