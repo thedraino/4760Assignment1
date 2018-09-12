@@ -20,6 +20,9 @@ project1.c is changing with each new problem of the exercise, the final code wil
 final problem of the exercise. However, the different results found throughout the steps of the exercise can be found in 
 "Answers" as mentioned above. 
 
+You must first create the executable program if trying to use this code. Use the 'make' command to create the 'prog1' executable.
+To remove the executables and object files, use the 'make clean' command. 
+
 Program Usage:
 In general, the project has three basic functions implemented at the command-line as follows:
   1) ./prog1 -h   : Display a help message to the user
