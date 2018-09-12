@@ -7,7 +7,10 @@ int main (int argc, char *argv[]) {
   pid_t childpid = 0;
   int i, n, option;
   
-  if (argc < 2 || arc > 3) {
+  //int nchars;
+  //char c;
+  
+  if (argc < 2 || arc > 4) {
     fprintf(stderr, "You passed an invalid number of arguments.\n");
     return 1;
   }
@@ -23,14 +26,23 @@ int main (int argc, char *argv[]) {
       
       case 'n' :
         n = atoi(argv[1]);
-  
+        //nchars = atoi(argv[2]);
+        //char str mybuf[nchars + 1];
+        
+//         printf("Enter your %d characters to form the string:\n", nchars);
+//         for (i = 0; i < nchars; i++) {
+//           c = getchar();
+//           mybuf[i] = c;
+//         }
+//         mybuf[nchars] = '\0'
+        
         for (i = 1; i < n; i++) {
           if (childpid = fork())
             break;
         }
         
-        wait();
-        fprintf (stderr, "i:%d  process ID:%ld  parent ID:%ld  child ID:%ld\n", i, (long)getpid(), (long)getppid(), (long)childpid);
+        //fprintf (stderr, "%ld : %s", (long)getpid(), mybuf);
+        //fprintf (stderr, "i:%d  process ID:%ld  parent ID:%ld  child ID:%ld\n", i, (long)getpid(), (long)getppid(), (long)childpid);
           
       case 'p' :
         fprintf(stderr, "%s:", argv[0]);
