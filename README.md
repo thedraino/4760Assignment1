@@ -1,9 +1,9 @@
-# 4760Assignment1 -- README
+4760Assignment1 -- README
 
-# Code created by: Andrew Audrain
-# Code created on: 09/07/2018
-# CS 4760 - Hauschild (UMSL)
-# Code written in: C
+Code created by: Andrew Audrain
+Code created on: 09/07/2018
+CS 4760 - Hauschild (UMSL)
+Code written in: C
 
 This project was created to perform several experiments on code provided in out textbook, Unix Systems Programming (Robbins/Robbins).
 Exercise 3.8 (pg 87) expands on the process chain of Program 3.1 in the book. 
