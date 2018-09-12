@@ -28,9 +28,11 @@ int main (int argc, char *argv[]) {
           if (childpid = fork())
             break;
         }
-        
-        wait();
-        fprintf (stderr, "i:%d  process ID:%ld  parent ID:%ld  child ID:%ld\n", i, (long)getpid(), (long)getppid(), (long)childpid);
+       
+        fprintf (stderr, "i:%d", i);  
+        fprintf (stderr, "process ID:%ld", (long)getpid());
+        fprintf (stderr, "parent ID:%ld", (long)getppid());  
+        fprintf (stderr, "child ID:%ld\n", (long)childpid);
           
       case 'p' :
         fprintf(stderr, "%s:", argv[0]);
