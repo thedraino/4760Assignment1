@@ -5,10 +5,7 @@
 
 int main (int argc, char *argv[]) {
   pid_t childpid = 0;
-  int i, n, k, m, option;
-  
-  k = 5;  // These values can be changed to whatever for testing. Also, they could be
-  m = 5;  //  k = $3 and m = $4 to give define them from the command-line.
+  int i, n, option;
   
   if (argc < 2 || arc > 3) {
     fprintf(stderr, "You passed an invalid number of arguments.\n");
@@ -31,12 +28,9 @@ int main (int argc, char *argv[]) {
           if (childpid = fork())
             break;
         }
-  
-        for (i = 1, i < k; i++) {
-          fprintf (stderr, "i:%d  process ID:%ld  parent ID:%ld  child ID:%ld\n", 
-                   i, (long)getpid(), (long)getppid(), (long)childpid);
-          sleep(m);
-        }
+        
+        wait();
+        fprintf (stderr, "i:%d  process ID:%ld  parent ID:%ld  child ID:%ld\n", i, (long)getpid(), (long)getppid(), (long)childpid);
           
       case 'p' :
         fprintf(stderr, "%s:", argv[0]);
