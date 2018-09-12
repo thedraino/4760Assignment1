@@ -29,8 +29,7 @@ int main (int argc, char *argv[]) {
             break;
         }
   
-        sleep(10); fprintf (stderr, "i:%d  process ID:%ld  parent ID:%ld  child ID:%ld\n", 
-                 i, (long)getpid(), (long)getppid(), (long)childpid);
+        fprintf (stderr, "i:%d  process ID:%ld  parent ID:%ld  child ID:%ld\n", i, (long)getpid(), (long)getppid(), (long)childpid);
   
       case 'p' :
         fprintf(stderr, "%s:", argv[0]);
