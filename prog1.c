@@ -6,11 +6,10 @@
 int main (int argc, char *argv[]) {
   pid_t childpid = 0;
   int i, n, option;
+  int nchars;
+  char c;
   
-  //int nchars;
-  //char c;
-  
-  if (argc < 2 || arc > 4) {
+  if (argc < 2 || argc > 4) {
     fprintf(stderr, "You passed an invalid number of arguments.\n");
     return 1;
   }
@@ -25,9 +24,9 @@ int main (int argc, char *argv[]) {
         break;
       
       case 'n' :
-        n = atoi(argv[1]);
-        //nchars = atoi(argv[2]);
-        //char str mybuf[nchars + 1];
+        n = atoi(optarg++);
+        nchars = atoi(argv[3]) + 1;
+        char mybuf[nchars:w];
         
 //         printf("Enter your %d characters to form the string:\n", nchars);
 //         for (i = 0; i < nchars; i++) {
